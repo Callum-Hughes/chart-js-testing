@@ -1,5 +1,5 @@
 var ctx = document.getElementById("myChart").getContext('2d');
-
+console.log('new repos');
 var startLabels = [];
 var startData = [];
 
