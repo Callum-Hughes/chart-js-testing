@@ -1,5 +1,5 @@
 var ctx = document.getElementById("myChart").getContext('2d');
-console.log('new repos');
+
 var startLabels = [];
 var startData = [];
 
@@ -117,8 +117,6 @@ selectedData.addEventListener('change', updateChart);
 const uniqueCircuitsFilterThreshold = document.getElementById('unique-circuits-filter');
 uniqueCircuitsFilterThreshold.addEventListener('change', updateChart);
 
-console.log(uniqueCircuitsFilterThreshold.value);
-
 function updateChart() {
 
     function generateColors(values, backgroundColorIntensity, borderColorIntensity) {
@@ -175,7 +173,6 @@ function updateChart() {
             filterThreshold = filterThresholdValue;
         };
 
-        console.log(filterThreshold);
         let uniqueCircuitsSearch = uniqueCircuits;
         let labelsFiltered = [];
         let selectedValuesFiltered = [];
