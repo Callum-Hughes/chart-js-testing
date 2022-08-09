@@ -199,32 +199,3 @@ function updateChart() {
     });
 
 };
-
-
-
-// function filterChart() {
-//     fetchData().then(dataPoints => {
-//         const labels = Object.keys(dataPoints[selectedData.value]);
-//         const selectedValues = Object.values(dataPoints[selectedData.value]);
-//         const uniqueCircuits = Object.values(dataPoints['locality']);
-
-//         let uniqueCircuitsSearch = uniqueCircuits;
-//         let labelsFiltered = [];
-//         let selectedValuesFiltered = [];
-
-//         for (i = 0; i < labels.length; i++) {
-//             const firstIndex = uniqueCircuits.findIndex((x) => x <= uniqueCircuitsFilterThreshold.value);
-//             if (firstIndex == 0) {
-//                 selectedValuesFiltered.push(selectedValues[i]);
-//                 labelsFiltered.push(labels[i]);
-//             } else if (firstIndex == -1) {
-//                 break;
-//             };
-//             uniqueCircuitsSearch.shift();
-//         }
-//         myChart.config.data.labels = labelsFiltered;
-//         myChart.config.data.datasets[0].data = selectedValuesFiltered;
-//         myChart.config.data.datasets[1].data = selectedValuesFiltered;
-//         myChart.update();
-//     });
-// };
