@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+<body>
+    <div style="width:100%;height:75%;">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div style="width:100%;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <label for="select">Select Data to View:</label>
+        <select style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" name="select" id="select" multiple>
+            <option value="year">Years</option>
+            <option value="locality">Tracks</option>
+        </select>
+    </div>
+    <div>
+        <label for="unique-circuits-filter">Filter by Number of Unique Circuits:</label>
+        <input type="number" id="unique-circuits-filter" name="unique-circuits-filter" min="1" max="10">
+    </div>
+    <div>
+        <h1>Comments!</h1>
+        <p>(Only Argentina/UK have data)</p>
+        <h3>Good:</h3>
+        <p id="good-comment"></p>
+        <h3>Bad:</h3>
+        <p id="bad-comment"></p>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
